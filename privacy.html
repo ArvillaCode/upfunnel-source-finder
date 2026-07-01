@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — UpFunnel Source Finder</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 20px; color: #1a1a2e; line-height: 1.7; }
+  h1 { font-size: 24px; border-bottom: 2px solid #7c3aed; padding-bottom: 12px; }
+  h2 { font-size: 18px; margin-top: 32px; color: #7c3aed; }
+  p, li { font-size: 14px; color: #374151; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .date { font-size: 13px; color: #6b7280; margin-top: -8px; margin-bottom: 32px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #6b7280; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidad</h1>
+<p class="date">Última actualización: 1 de julio de 2026</p>
+
+<h2>Resumen</h2>
+<p>UpFunnel Source Finder es una extensión de navegador que busca fuentes de información relacionadas con el texto que seleccionás. <strong>No recopila, almacena ni transmite datos personales a servidores del creador.</strong> Todo el procesamiento ocurre directamente en tu navegador.</p>
+
+<h2>Qué datos maneja la extensión</h2>
+<ul>
+  <li><strong>Texto seleccionado:</strong> se usa para buscar fuentes en los proveedores de búsqueda que configures (Serper.dev, DuckDuckGo, Google CSE).</li>
+  <li><strong>API keys:</strong> se almacenan localmente en tu navegador (chrome.storage.local). Nunca se envían a ningún servidor del creador.</li>
+  <li><strong>URL de webhook (opcional):</strong> si conectás Google Sheets, la extensión envía los resultados de búsqueda a la URL que vos configuraste.</li>
+</ul>
+
+<h2>Qué datos NO recopila</h2>
+<ul>
+  <li>No recopila información personal (nombre, email, dirección IP).</li>
+  <li>No usa cookies ni trackers.</li>
+  <li>No envía datos a servidores del creador.</li>
+  <li>No vende ni comparte datos con terceros.</li>
+  <li>No accede a tus cuentas, contraseñas ni datos de navegación.</li>
+</ul>
+
+<h2>Cómo funcionan las API keys</h2>
+<p>Las API keys que configures (Serper, OpenAI, Claude, OpenRouter) se guardan exclusivamente en el almacenamiento local de tu navegador. Se envían directamente desde tu navegador a cada proveedor de API cuando realizás una búsqueda o generación de contenido. El creador de la extensión no tiene acceso a estas keys.</p>
+
+<h2>Google Sheets (opcional)</h2>
+<p>Si conectás un Google Sheet mediante webhook (sheet.best, Apps Script), los resultados de búsqueda se envían directamente desde tu navegador a la URL que configuraste. El creador de la extensión no tiene acceso a tu sheet ni a los datos que se guardan allí.</p>
+
+<h2>Proveedores externos</h2>
+<p>La extensión se comunica directamente con estos servicios según tu configuración:</p>
+<ul>
+  <li><strong>Serper.dev</strong> — búsqueda web</li>
+  <li><strong>DuckDuckGo</strong> — búsqueda web (fallback)</li>
+  <li><strong>Google Custom Search</strong> — búsqueda web (fallback, opcional)</li>
+  <li><strong>OpenAI</strong> — generación de contenido con IA (opcional)</li>
+  <li><strong>Anthropic (Claude)</strong> — generación de contenido con IA (opcional)</li>
+  <li><strong>OpenRouter</strong> — generación de contenido con IA (opcional)</li>
+  <li><strong>Google Sheets API</strong> — guardado de resultados (opcional, vía webhook)</li>
+</ul>
+<p>Cada proveedor tiene su propia política de privacidad. Te recomendamos revisarlas si te interesa.</p>
+
+<h2>Almacenamiento local</h2>
+<p>La extensión usa <code>chrome.storage.local</code> para guardar:</p>
+<ul>
+  <li>Tus API keys</li>
+  <li>Tus preferencias (tema, proveedor preferido)</li>
+  <li>Tus resaltados de texto y fuentes encontradas</li>
+  <li>La URL del webhook de Google Sheets (si configuraste)</li>
+</ul>
+<p>Todo esto se almacena solo en tu navegador. Podés borrarlo en cualquier momento desde <code>chrome://extensions/</code> → Detalles de la extensión → Borrar datos.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia, se actualizará la fecha en el encabezado. El uso continuo de la extensión después de los cambios constituye aceptación de la nueva política.</p>
+
+<h2>Contacto</h2>
+<p>Si tenés preguntas sobre esta política, contactanos a través del grupo de WhatsApp de UpFunnel o en <a href="https://upfunnel.com">upfunnel.com</a>.</p>
+
+<footer>
+  UpFunnel Source Finder — Hecho para la comunidad UpFunnel. Sin backend, sin servidores, sin tracking.
+</footer>
+
+</body>
+</html>
